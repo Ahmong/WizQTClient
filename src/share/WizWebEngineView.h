@@ -51,6 +51,10 @@ private:
     WebSocketClientWrapper* m_clientWrapper;
     QWebChannel* m_channel;
     QString m_objectNames;
+
+// by MZH 2017-1-6
+protected:
+    void wheelEvent(QWheelEvent *event);
 };
 
 bool WizWebEngineViewProgressKeyEvents(QKeyEvent* ev);
