@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="WizNote"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\cryptopp\;CMake Files\lib\quazip\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\tools\;CMake Files\..\..\..\tools\Qt\;CMake Files\..\..\..\tools\Qt\5.9.1\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5LinguistTools\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Xml\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Network\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5PrintSupport\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngine\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngineCore\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Quick\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebChannel\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Positioning\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngineWidgets\;CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebSockets\;CMake Files\src\;CMake Files\src\test\;CMake Files\resources\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mzh/git/WizTeam/WizQTClient/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WizNote">
+				<Option output="/home/mzh/git/WizTeam/WizQTClient/src/WizNote" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mzh/git/WizTeam/WizQTClient/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
+					<Add option="-DQT_WEBENGINE_LIB"/>
+					<Add option="-DQT_WEBENGINECORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_WEBCHANNEL_LIB"/>
+					<Add option="-DQT_POSITIONING_LIB"/>
+					<Add option="-DQT_WEBENGINEWIDGETS_LIB"/>
+					<Add option="-DQT_WEBSOCKETS_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/src/WizNote_autogen/include"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtCore"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/./mkspecs/linux-g++"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtGui"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWidgets"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtXml"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtNetwork"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtPrintSupport"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebEngine"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebEngineCore"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtQuick"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtQml"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebChannel"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtPositioning"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebEngineWidgets"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebSockets"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/src"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/lib"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/lib/openssl/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/../../../../include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/../../../../include/c++/6.3.1/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/../../../../include/c++/6.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 WizNote"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WizNote/fast">
+				<Option output="/home/mzh/git/WizTeam/WizQTClient/src/WizNote" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mzh/git/WizTeam/WizQTClient/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
+					<Add option="-DQT_WEBENGINE_LIB"/>
+					<Add option="-DQT_WEBENGINECORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_WEBCHANNEL_LIB"/>
+					<Add option="-DQT_POSITIONING_LIB"/>
+					<Add option="-DQT_WEBENGINEWIDGETS_LIB"/>
+					<Add option="-DQT_WEBSOCKETS_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/src/WizNote_autogen/include"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtCore"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/./mkspecs/linux-g++"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtGui"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWidgets"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtXml"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtNetwork"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtPrintSupport"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebEngine"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebEngineCore"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtQuick"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtQml"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebChannel"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtPositioning"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebEngineWidgets"/>
+					<Add directory="/home/mzh/tools/Qt/5.9.1/gcc_64/include/QtWebSockets"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/src"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/lib"/>
+					<Add directory="/home/mzh/git/WizTeam/WizQTClient/lib/openssl/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/../../../../include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/../../../../include/c++/6.3.1/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/../../../../include/c++/6.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 WizNote/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WizNote_autogen">
+				<Option working_dir="/home/mzh/git/WizTeam/WizQTClient/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 WizNote_autogen"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mzh/git/WizTeam/WizQTClient/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/resources/wiznote.qrc">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizActions.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizActions.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizAttachmentListWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizAttachmentListWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizButton.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizButton.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCategoryView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCategoryView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCategoryViewItem.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCategoryViewItem.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCellButton.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCellButton.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizConsoleDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizConsoleDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCreateAccountDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizCreateAccountDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDef.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocTemplateDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocTemplateDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentEditStatus.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentEditStatus.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentHistory.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentHistory.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentListView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentListView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentListViewItem.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentListViewItem.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentSelectionView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentSelectionView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentTransitionView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentTransitionView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentWebView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizDocumentWebView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizEditorInsertLinkForm.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizEditorInsertLinkForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizEditorInsertTableForm.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizEditorInsertTableForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizEditorToolBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizEditorToolBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizFileImporter.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizFileImporter.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizFolderSelector.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizFolderSelector.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizFolderView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizFolderView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizInfoBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizInfoBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizInitBizCertDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizInitBizCertDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizLineInputDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizLineInputDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizLoginDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizLoginDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMainWindow.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMainWindow.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMessageCompleter.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMessageCompleter.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMessageListView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMessageListView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMobileFileReceiver.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizMobileFileReceiver.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteComments.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteComments.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteComments_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteInfoForm.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteInfoForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteStyle.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNoteStyle.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNote_autogen/mocs_compilation.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNotifyBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizNotifyBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizOEMSettings.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizOEMSettings.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizPopupButton.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizPopupButton.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizPositionDelegate.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizPositionDelegate.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizPreferenceDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizPreferenceDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizProgressDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizProgressDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizProxyDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizProxyDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizSearchReplaceWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizSearchReplaceWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizSearchWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizSearchWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizStatusBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizStatusBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizTagListWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizTagListWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizThumbCache.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizThumbCache.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizThumbCache_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizTitleBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizTitleBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizTitleEdit.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizTitleEdit.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUpgrade.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUpgrade.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUpgradeNotifyDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUpgradeNotifyDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUserCipherForm.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUserCipherForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUserVerifyDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizUserVerifyDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizWebEngineInjectObject.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizWebEngineInjectObject.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizWebSettingsDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/WizWebSettingsDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/core/WizAccountManager.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/core/WizAccountManager.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/core/WizCommentManager.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/core/WizCommentManager.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/core/WizNoteManager.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/core/WizNoteManager.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/html/WizHtmlCollector.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/html/WizHtmlCollector.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/html/WizHtmlReader.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/html/WizHtmlReader.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/mac/WizSearchWidget_mm.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/mac/WizSearchWidget_mm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/main.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/qrc_wiznote.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WebSocketClientWrapper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WebSocketClientWrapper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WebSocketTransport.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WebSocketTransport.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizAnalyzer.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizAnalyzer.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizAnimateAction.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizAnimateAction.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizCommonUI.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizCommonUI.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizDatabase.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizDatabase.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizDatabaseManager.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizDatabaseManager.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizDrawTextHelper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizDrawTextHelper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizEnc.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizEnc.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizEventLoop.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizEventLoop.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizFileIconProvider.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizFileIconProvider.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizFileMonitor.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizFileMonitor.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizGlobal.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizGlobal.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizHtml2Zip.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizHtml2Zip.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizIndex.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizIndex.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizIndexBase.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizIndexBase.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizKMCore.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizKMCore.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizLocalPeer.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizLocalPeer.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizLockedFile.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizLockedFile.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMd5.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMd5.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMessageBox.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMessageBox.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMisc.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMisc.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMultiLineListWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizMultiLineListWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObject.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObject.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObjectDataDownloader.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObjectDataDownloader.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObjectOperator.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObjectOperator.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizObjectOperator_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizPopupWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizPopupWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizQtHelper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizQtHelper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizRequest.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizRequest.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSearch.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSearch.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSettings.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSettings.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizShadowEffect.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizShadowEffect.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizShadowWindow.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSingleApplication.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSingleApplication.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizSyncableDatabase.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizThreads.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizThreads.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizThreads_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizThumbIndex.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizThumbIndex.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizTranslater.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizTranslater.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizUI.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizUI.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizUIHelper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizUIHelper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizUdpClient.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizUdpClient.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWebEngineView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWebEngineView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWin32Helper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWin32Helper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWindowTitleBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWindowTitleBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWindowsHelper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizWindowsHelper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizXml.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizXml.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizXmlRpc.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizXmlRpc.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizZip.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizZip.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizZiwReader.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/WizZiwReader.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/cppsqlite3.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/cppsqlite3.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/jsoncpp/json/json-forwards.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/jsoncpp/json/json.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/jsoncpp/jsoncpp.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/sqlite3.c">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/sqlite3.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/share/sqlite3ext.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizApiEntry.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizApiEntry.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAsyncApi.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAsyncApi.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAvatarHost.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAvatarHost.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAvatarHost_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAvatarUploader.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizAvatarUploader.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizJSONServerBase.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizJSONServerBase.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizKMServer.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizKMServer.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizKMSync.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizKMSync.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizKMSync_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizSync.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizSync.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizToken.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizToken.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizToken_p.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizXmlRpcServer.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/sync/WizXmlRpcServer.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizAdvancedSearchDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizConsoleDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizCrashReportDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizCreateAccountDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizDocTemplateDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizEditorInsertLinkForm.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizEditorInsertTableForm.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizEmailShareDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizExecutingActionDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizInitBizCertDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizLineInputDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizLoginDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizNoteInfoForm.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizPreferenceDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizProgressDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizProxyDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizSearchReplaceWidget.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizTemplatePurchaseDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizUpgradeNotifyDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizUserCipherForm.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizUserServiceExprDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui/WizVerificationCodeDialog.ui">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizAdvancedSearchDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizConsoleDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizCrashReportDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizCreateAccountDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizDocTemplateDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizEditorInsertLinkForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizEditorInsertTableForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizEmailShareDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizExecutingActionDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizInitBizCertDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizLineInputDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizLoginDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizNoteInfoForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizPreferenceDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizProgressDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizProxyDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizSearchReplaceWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizTemplatePurchaseDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizUpgradeNotifyDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizUserCipherForm.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizUserServiceExprDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/ui_WizVerificationCodeDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizLogger.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizLogger.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizMisc.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizMisc.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizNotify.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizNotify.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizPathResolve.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizPathResolve.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizPinyin.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizPinyin.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizStyleHelper.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/utils/WizStyleHelper.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizAboutDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizAboutDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizAdvancedSearchDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizAdvancedSearchDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizCodeEditorDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizCodeEditorDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizCrashReportDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizCrashReportDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizCustomToolBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizCustomToolBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizEmailShareDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizEmailShareDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizExecutingActionDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizExecutingActionDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizFramelessWebDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizFramelessWebDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizImageButton.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizImageButton.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizLocalProgressWebView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizLocalProgressWebView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizScreenShotWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizScreenShotWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizScrollBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizScrollBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizSegmentedButton.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizSegmentedButton.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizShareLinkDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizShareLinkDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizSingleDocumentView.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizSingleDocumentView.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTableSelector.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTableSelector.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTagBar.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTagBar.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTemplatePurchaseDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTemplatePurchaseDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTipsWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTipsWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTrayIcon.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizTrayIcon.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizUserInfoWidget.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizUserInfoWidget.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizUserInfoWidgetBase.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizUserInfoWidgetBase.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizUserServiceExprDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizUserServiceExprDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizVerificationCodeDialog.cpp">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/widgets/WizVerificationCodeDialog.h">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/wiznote_zh_CN.qm">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/wiznote_zh_CN.qm.rule">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/wiznote_zh_TW.qm">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/wiznote_zh_TW.qm.rule">
+			<Option target="WizNote"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/cryptopp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\cryptopp\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/cryptopp/adhoc.cpp.proto">
+			<Option virtualFolder="CMake Files\lib\cryptopp\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/cryptopp/cryptopp-config-build.cmake.in">
+			<Option virtualFolder="CMake Files\lib\cryptopp\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/cryptopp/cryptopp-config-version.cmake.in">
+			<Option virtualFolder="CMake Files\lib\cryptopp\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/cryptopp/cryptopp-config.cmake.in">
+			<Option virtualFolder="CMake Files\lib\cryptopp\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/lib/quazip/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\quazip\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/cmake/QtChooser.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5LinguistTools\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5LinguistTools\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5LinguistTools\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Xml/Qt5XmlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Xml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Xml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupport_QCupsPrinterSupportPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebEngine/Qt5WebEngineConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngine\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebEngine/Qt5WebEngineConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngine\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngineCore\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngineCore\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Quick/Qt5QuickConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5QmlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebChannel/Qt5WebChannelConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebChannel\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebChannel/Qt5WebChannelConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebChannel\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Positioning/Qt5PositioningConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Positioning\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5Positioning/Qt5PositioningConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5Positioning\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngineWidgets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebEngineWidgets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebSockets/Qt5WebSocketsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebSockets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/../../../tools/Qt/5.9.1/gcc_64/lib/cmake/Qt5WebSockets/Qt5WebSocketsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\tools\Qt\5.9.1\gcc_64\lib\cmake\Qt5WebSockets\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/src/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\test\"/>
+		</Unit>
+		<Unit filename="/home/mzh/git/WizTeam/WizQTClient/resources/wiznote.qrc">
+			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
