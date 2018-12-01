@@ -992,6 +992,11 @@ int WizStyleHelper::titleEditorHeight()
     return WizSmartScaleUI(30);
 }
 
+int WizStyleHelper::titleIconHeight()
+{
+    return WizSmartScaleUI(11);
+}
+
 int WizStyleHelper::editToolBarHeight()
 {
     return WizSmartScaleUI(30);
@@ -1004,7 +1009,11 @@ int WizStyleHelper::infoBarHeight()
 
 int WizStyleHelper::editIconHeight()
 {
+<<<<<<< HEAD
     return WizSmartScaleUI(12);
+=======
+    return WizSmartScaleUI(11);
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 }
 
 int WizStyleHelper::tagBarHeight()

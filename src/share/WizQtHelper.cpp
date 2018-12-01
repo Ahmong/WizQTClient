@@ -454,7 +454,11 @@ int WizSmartScaleUI(int spec)
         else
         {
             // 当程序窗口还没有初始化时，将得不到程序关联屏幕的相关数据，应该在窗口初始化完成后调用本函数。
+<<<<<<< HEAD
             //Q_ASSERT(false);
+=======
+            Q_ASSERT(false);
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
         }
     }
     //

@@ -145,6 +145,14 @@ void WizGetSkins(QStringList& skins);
 QString WizGetSkinResourcePath(const QString& strSkinName);
 QString WizGetSkinDisplayName(const QString& strSkinName, const QString& strLocale);
 QString WizGetSkinResourceFileName(const QString& strSkinName, const QString& strName);
+<<<<<<< HEAD
+=======
+QPixmap WizLoadPixmap(const QString& strSkinName, const QString& strIconName, const QSize& iconSize);
+QIcon WizLoadSkinIcon(const QString& strSkinName, const QString& strIconName, QIcon::Mode mode = QIcon::Normal, QIcon::State state = QIcon::Off);
+QIcon WizLoadSkinIcon(const QString& strSkinName, const QString& strIconName, const QSize& iconSize, QIcon::Mode mode = QIcon::Normal, QIcon::State state = QIcon::Off);
+QIcon WizLoadSkinIcon(const QString& strSkinName, QColor forceground, const QString& strIconName);
+QIcon WizLoadSkinIcon2(const QString& strSkinName, const QColor& blendColor, const QString& strIconName);
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 
 struct WizIconOptions
 {

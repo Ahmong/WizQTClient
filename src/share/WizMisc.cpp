@@ -1710,6 +1710,7 @@ QString WizGetSkinResourceFileName(const QString& strSkinName, const QString& st
     return QString();
 }
 
+<<<<<<< HEAD
 
 void SetDomAttrRecur(QDomElement &elem, QString strtagname, QString strattr, QString strattrval)
 {
@@ -1728,6 +1729,65 @@ void SetDomAttrRecur(QDomElement &elem, QString strtagname, QString strattr, QSt
         //
         QDomElement childElem = elem.childNodes().at(i).toElement();
         SetDomAttrRecur(childElem, strtagname, strattr, strattrval);
+=======
+QIcon WizLoadSkinIcon(const QString& strSkinName, const QString& strIconName,
+                      QIcon::Mode mode /* = QIcon::Normal */, QIcon::State state /* = QIcon::Off */)
+{
+    return WizLoadSkinIcon(strSkinName, strIconName, QSize(), mode, state);
+}
+
+QPixmap WizLoadPixmap(const QString& strSkinName, const QString& strIconName, const QSize& iconSize)
+{
+    QString strIconNormal = WizGetSkinResourceFileName(strSkinName, strIconName);
+    QString strIcon2x = WizGetSkinResourceFileName(strSkinName, strIconName + "@2x");
+
+    if (iconSize.height() > 0) {
+        QPixmap pixmapNormal = QPixmap(strIconNormal);
+        if (QFile::exists(strIcon2x)) {
+            QPixmap pixmap2x = QPixmap(strIcon2x);
+            if (pixmapNormal.height() < iconSize.height()) {
+                return pixmap2x.scaled(iconSize, Qt::KeepAspectRatio);
+//                return pixmap2x.scaledToHeight(iconSize.height());
+            }
+        }
+        return pixmapNormal.scaled(iconSize, Qt::KeepAspectRatio);
+//        return pixmapNormal.scaledToHeight(iconSize.height());
+    }
+    return QPixmap(strIconNormal);
+}
+
+QIcon WizLoadSkinIcon(const QString& strSkinName, const QString& strIconName, const QSize& iconSize,
+                      QIcon::Mode mode /* = QIcon::Normal */, QIcon::State state /* = QIcon::Off */)
+{
+    Q_UNUSED(mode);
+    Q_UNUSED(state);
+
+    QString strIconNormal = strIconName;
+    QString strIconActive1 = strIconName + "_on";
+    QString strIconActive2 = strIconName + "_selected";
+
+
+    if (!QFile::exists(WizGetSkinResourceFileName(strSkinName, strIconNormal))) {
+        //TOLOG1("Can't load icon: ", strIconName);
+        return QIcon();
+    }
+
+    QPixmap pixmapNormal = WizLoadPixmap(strSkinName, strIconNormal, iconSize);
+
+    QIcon icon;
+    icon.addPixmap(pixmapNormal, QIcon::Normal, QIcon::Off);
+
+    // used for check state
+    if (QFile::exists(WizGetSkinResourceFileName(strSkinName, strIconActive1))) {
+        QPixmap pixmapActive1 = WizLoadPixmap(strSkinName, strIconActive1, iconSize);
+        icon.addPixmap(pixmapActive1, QIcon::Active, QIcon::On);
+    }
+
+    // used for sunken state
+    if (QFile::exists(WizGetSkinResourceFileName(strSkinName, strIconActive2))) {
+        QPixmap pixmapActive2 = WizLoadPixmap(strSkinName, strIconActive2, iconSize);
+        icon.addPixmap(pixmapActive2, QIcon::Active, QIcon::Off);
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     }
 }
 

@@ -615,7 +615,11 @@ protected:
         QRect rcIcon((opt.rect.width() - size.width()) / 2, (opt.rect.height() - size.height()) / 2, size.width(), size.height());
         if (opt.arrowType == Qt::RightArrow)
             rcIcon.setX((opt.rect.width() - size.width()) / 2 - TOOLBUTTON_MARGIN_WIDTH);
+<<<<<<< HEAD
         opt.icon.paint(&p, rcIcon, Qt::AlignCenter, mode);
+=======
+        opt.icon.paint(&p, rcIcon, Qt::AlignCenter, mode, state);
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 
         if (opt.arrowType == Qt::RightArrow)
         {
@@ -664,6 +668,10 @@ public:
       , m_color(Qt::transparent)
     {
         setCheckable(false);
+<<<<<<< HEAD
+=======
+//        setIconSize(QSize(Utils::WizStyleHelper::editorButtonHeight(), Utils::WizStyleHelper::editorButtonHeight()));
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
         setPopupMode(QToolButton::MenuButtonPopup);
     }
 
@@ -790,7 +798,11 @@ public:
         , m_isPopup(false)
     {
         setFocusPolicy(Qt::NoFocus);
+<<<<<<< HEAD
         setSizeAdjustPolicy(QComboBox::AdjustToMinimumContentsLength);
+=======
+        setSizeAdjustPolicy(QComboBox::AdjustToContents);
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
         QFont f = font();
         f.setPixelSize(Utils::WizStyleHelper::editComboFontSize());
         setFont(f);
@@ -907,7 +919,7 @@ public:
         , m_isPopup(false)
     {
         setFocusPolicy(Qt::NoFocus);
-        setSizeAdjustPolicy(QComboBox::AdjustToMinimumContentsLength);
+        setSizeAdjustPolicy(QComboBox::AdjustToContents);
         setEditable(false);
     }
 
@@ -1138,7 +1150,12 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     QSize editIconSize = QSize(Utils::WizStyleHelper::editIconHeight(), Utils::WizStyleHelper::editIconHeight());
 
     m_btnFormatPainter = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnFormatPainter->setIcon(::WizLoadSkinIcon(skin, "formatter", editIconSize, ICON_OPTIONS));
+=======
+    m_btnFormatPainter->setIcon(::WizLoadSkinIcon(skin, "formatter", editIconSize));
+    //m_btnFormatPainter->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatRemoveFormat")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnFormatPainter->setToolTip(tr("Format Painter"));
     m_btnFormatPainter->setCheckable(true);
     m_btnFormatPainter->setChecked(false);
@@ -1147,14 +1164,23 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     connect(m_btnFormatPainter, SIGNAL(dblClicked()), SLOT(on_btnFormatPainter_dblClicked()));
     //
     m_btnRemoveFormat = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnRemoveFormat->setIcon(::WizLoadSkinIcon(skin, "actionFormatRemoveFormat", editIconSize, ICON_OPTIONS));
+=======
+    m_btnRemoveFormat->setIcon(::WizLoadSkinIcon(skin, "actionFormatRemoveFormat", editIconSize));
+    //m_btnRemoveFormat->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatRemoveFormat")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnRemoveFormat->setToolTip(tr("Remove Format"));
     m_btnRemoveFormat->setCheckable(false);
     m_btnRemoveFormat->setPosition(CWizToolButton::right);
     connect(m_btnRemoveFormat, SIGNAL(clicked()), SLOT(on_btnRemoveFormat_clicked()));
 
     m_btnForeColor = new CWizToolButtonColor(this);
+<<<<<<< HEAD
     m_btnForeColor->setIcon(::WizLoadSkinIcon(skin, "actionFormatForeColor", editIconSize, ICON_OPTIONS));
+=======
+    m_btnForeColor->setIcon(::WizLoadSkinIcon(skin, "actionFormatForeColor", editIconSize));
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnForeColor->setColor(QColor("#ff0000"));
     m_btnForeColor->setToolTip(tr("ForeColor"));
     m_btnForeColor->setCheckable(false);
@@ -1165,7 +1191,11 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     m_btnForeColor->setMenu(foreColorMenu);
 
     m_btnBackColor = new CWizToolButtonColor(this);
+<<<<<<< HEAD
     m_btnBackColor->setIcon(::WizLoadSkinIcon(skin, "actionFormatBackColor", editIconSize, ICON_OPTIONS));
+=======
+    m_btnBackColor->setIcon(::WizLoadSkinIcon(skin, "actionFormatBackColor", editIconSize));
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnBackColor->setColor(QColor("#ffff00"));
     m_btnBackColor->setToolTip(tr("BackColor"));
     m_btnBackColor->setCheckable(false);
@@ -1176,37 +1206,67 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     m_btnBackColor->setMenu(backColorMenu);
 
     m_btnBold = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnBold->setIcon(::WizLoadSkinIcon(skin, "actionFormatBold", editIconSize, ICON_OPTIONS));
+=======
+    m_btnBold->setIcon(::WizLoadSkinIcon(skin, "actionFormatBold", editIconSize));
+    //m_btnBold->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatBold")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnBold->setToolTip(tr("Bold %1B").arg(commandKey()));
     m_btnBold->setPosition(CWizToolButton::left);
     connect(m_btnBold, SIGNAL(clicked()), SLOT(on_btnBold_clicked()));
 
     m_btnItalic = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnItalic->setIcon(::WizLoadSkinIcon(skin, "actionFormatItalic", editIconSize, ICON_OPTIONS));
+=======
+    m_btnItalic->setIcon(::WizLoadSkinIcon(skin, "actionFormatItalic", editIconSize));
+    //m_btnItalic->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatItalic")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnItalic->setToolTip(tr("Italic %1I").arg(commandKey()));
     m_btnItalic->setPosition(CWizToolButton::Center);
     connect(m_btnItalic, SIGNAL(clicked()), SLOT(on_btnItalic_clicked()));
 
     m_btnShowExtra = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnShowExtra->setIcon(::WizLoadSkinIcon(skin, "actionFormatExtra", editIconSize, ICON_OPTIONS));
+=======
+    m_btnShowExtra->setIcon(::WizLoadSkinIcon(skin, "actionFormatExtra", editIconSize));
+    //m_btnShowExtra->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatExtra")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnShowExtra->setToolTip(tr("Extra"));
     m_btnShowExtra->setPosition(CWizToolButton::NoPosition);
     connect(m_btnShowExtra, SIGNAL(clicked()), SLOT(on_btnShowExtra_clicked()));
 
     m_btnUnderLine = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnUnderLine->setIcon(::WizLoadSkinIcon(skin, "actionFormatUnderLine", editIconSize, ICON_OPTIONS));
+=======
+    m_btnUnderLine->setIcon(::WizLoadSkinIcon(skin, "actionFormatUnderLine", editIconSize));
+    //m_btnUnderLine->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatUnderLine")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnUnderLine->setToolTip(tr("Underline %1U").arg(commandKey()));
     m_btnUnderLine->setPosition(CWizToolButton::Center);
     connect(m_btnUnderLine, SIGNAL(clicked()), SLOT(on_btnUnderLine_clicked()));
 
     m_btnStrikeThrough = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnStrikeThrough->setIcon(::WizLoadSkinIcon(skin, "actionFormatStrikeThrough", editIconSize, ICON_OPTIONS));
+=======
+    m_btnStrikeThrough->setIcon(::WizLoadSkinIcon(skin, "actionFormatStrikeThrough", editIconSize));
+    //m_btnStrikeThrough->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatStrikeThrough")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnStrikeThrough->setToolTip(tr("Strike Through %1%2K").arg(optionKey()).arg(commandKey()));
     m_btnStrikeThrough->setPosition(CWizToolButton::right);
     connect(m_btnStrikeThrough, SIGNAL(clicked()), SLOT(on_btnStrikeThrough_clicked()));
 
     m_btnJustify = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnJustify->setIcon(::WizLoadSkinIcon(skin, "actionFormatJustifyLeft", editIconSize, ICON_OPTIONS));
+=======
+    m_btnJustify->setIcon(::WizLoadSkinIcon(skin, "actionFormatJustifyLeft", editIconSize));
+    //m_btnJustify->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatJustifyLeft")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnJustify->setCheckable(false);
     m_btnJustify->setArrowType(Qt::RightArrow);
     m_btnJustify->setPopupMode(QToolButton::MenuButtonPopup);
@@ -1231,19 +1291,33 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     alignGroup->addAction(m_actionJustifyRight);
 
     m_btnUnorderedList = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnUnorderedList->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertUnorderedList", editIconSize, ICON_OPTIONS));
+=======
+    m_btnUnorderedList->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertUnorderedList", editIconSize));
+    //m_btnUnorderedList->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertUnorderedList")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnUnorderedList->setToolTip(tr("UnorderedList %1%2U").arg(optionKey()).arg(commandKey()));
     m_btnUnorderedList->setPosition(CWizToolButton::left);
     connect(m_btnUnorderedList, SIGNAL(clicked()), SLOT(on_btnUnorderedList_clicked()));
 
     m_btnOrderedList = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnOrderedList->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertOrderedList", editIconSize, ICON_OPTIONS));
+=======
+    m_btnOrderedList->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertOrderedList", editIconSize));
+    //m_btnOrderedList->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertOrderedList")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnOrderedList->setToolTip(tr("OrderedList %1%2O").arg(optionKey()).arg(commandKey()));
     m_btnOrderedList->setPosition(CWizToolButton::right);
     connect(m_btnOrderedList, SIGNAL(clicked()), SLOT(on_btnOrderedList_clicked()));
 
     QWidgetAction* tableAction = new QWidgetAction(this);
+<<<<<<< HEAD
     tableAction->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertTable", editIconSize, ICON_OPTIONS));
+=======
+    tableAction->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertTable", editIconSize));
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     tableAction->setText(tr("Insert Table"));
     WizTableSelectorWidget* tableWidget = new WizTableSelectorWidget(this);
     tableAction->setDefaultWidget(tableWidget);
@@ -1256,7 +1330,13 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     //
     m_btnTable = new CWizToolButton(this);
     m_btnTable->setCheckable(false);
+<<<<<<< HEAD
     m_btnTable->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertTable", editIconSize, ICON_OPTIONS));
+=======
+//    m_btnTable->setHorizontalPadding(8);
+    m_btnTable->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertTable", editIconSize));
+    //m_btnTable->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertTable")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnTable->setToolTip(tr("Insert Table"));
     m_btnTable->setPosition(CWizToolButton::Center);
     m_btnTable->setMenu(menuTable);
@@ -1266,14 +1346,24 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     m_btnHorizontal = new CWizToolButton(this);
     m_btnHorizontal->setCheckable(false);
     m_btnHorizontal->setHorizontalPadding(9);
+<<<<<<< HEAD
     m_btnHorizontal->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertHorizontal", editIconSize, ICON_OPTIONS));
+=======
+    m_btnHorizontal->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertHorizontal", editIconSize));
+    //m_btnHorizontal->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertHorizontal")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnHorizontal->setToolTip(tr("Insert Horizontal %1%2H").arg(shiftKey()).arg(commandKey()));
     m_btnHorizontal->setPosition(CWizToolButton::Center);
     connect(m_btnHorizontal, SIGNAL(clicked()), SLOT(on_btnHorizontal_clicked()));
 
     m_btnCheckList = new CWizToolButton(this);
     m_btnCheckList->setCheckable(false);
+<<<<<<< HEAD
     m_btnCheckList->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertCheckList", editIconSize, ICON_OPTIONS));
+=======
+    m_btnCheckList->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertCheckList", editIconSize));
+    //m_btnCheckList->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertCheckList")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnCheckList->setToolTip(tr("Insert Checklist %1O").arg(commandKey()));
     m_btnCheckList->setPosition(CWizToolButton::left);
     connect(m_btnCheckList, SIGNAL(clicked()), SLOT(on_btnCheckList_clicked()));
@@ -1281,7 +1371,12 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     m_btnInsertLink = new CWizToolButton(this);
     m_btnInsertLink->setCheckable(false);
     m_btnInsertLink->setHorizontalPadding(6, 10);
+<<<<<<< HEAD
     m_btnInsertLink->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertLink", editIconSize, ICON_OPTIONS));
+=======
+    m_btnInsertLink->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertLink", editIconSize));
+    //m_btnInsertLink->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertLink")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnInsertLink->setToolTip(tr("Insert Link %1K").arg(commandKey()));
     m_btnInsertLink->setPosition(CWizToolButton::Center);
     connect(m_btnInsertLink, SIGNAL(clicked()), SLOT(on_btnInsertLink_clicked()));
@@ -1289,7 +1384,12 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     m_btnInsertImage = new CWizToolButton(this);
     m_btnInsertImage->setCheckable(false);
     m_btnInsertImage->setHorizontalPadding(8);
+<<<<<<< HEAD
     m_btnInsertImage->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertImage", editIconSize, ICON_OPTIONS));
+=======
+    m_btnInsertImage->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertImage", editIconSize));
+    //m_btnInsertImage->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertImage")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnInsertImage->setToolTip(tr("Insert Image %1%2I").arg(shiftKey()).arg(commandKey()));
     m_btnInsertImage->setPosition(CWizToolButton::Center);
     connect(m_btnInsertImage, SIGNAL(clicked()), SLOT(on_btnInsertImage_clicked()));
@@ -1297,20 +1397,36 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
     m_btnInsertDate = new CWizToolButton(this);
     m_btnInsertDate->setCheckable(false);
     m_btnInsertDate->setHorizontalPadding(8, 10);
+<<<<<<< HEAD
     m_btnInsertDate->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertDate", editIconSize, ICON_OPTIONS));
+=======
+    m_btnInsertDate->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertDate", editIconSize));
+    //m_btnInsertDate->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertDate")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnInsertDate->setToolTip(tr("Insert Date %1%2D").arg(shiftKey()).arg(commandKey()));
     m_btnInsertDate->setPosition(CWizToolButton::right);
     connect(m_btnInsertDate, SIGNAL(clicked()), SLOT(on_btnInsertDate_clicked()));
 
     m_btnMobileImage = new CWizToolButton(this);
+<<<<<<< HEAD
     m_btnMobileImage->setIcon(::WizLoadSkinIcon(skin, "actionMobileImage", editIconSize, ICON_OPTIONS));
+=======
+//    m_btnMobileImage->setHorizontalPadding(6);
+    m_btnMobileImage->setIcon(::WizLoadSkinIcon(skin, "actionMobileImage", editIconSize));
+    //m_btnMobileImage->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionMobileImage")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnMobileImage->setToolTip(tr("Receive mobile image"));
     m_btnMobileImage->setPosition(CWizToolButton::Center);
     connect(m_btnMobileImage, SIGNAL(clicked()), SLOT(on_btnMobileImage_clicked()));
 
     m_btnSearchReplace = new CWizToolButton(this);
     m_btnSearchReplace->setCheckable(false);
+<<<<<<< HEAD
     m_btnSearchReplace->setIcon(::WizLoadSkinIcon(skin, "actionFormatSearchReplace", editIconSize, ICON_OPTIONS));
+=======
+    m_btnSearchReplace->setIcon(::WizLoadSkinIcon(skin, "actionFormatSearchReplace", editIconSize));
+    //m_btnSearchReplace->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatSearchReplace")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnSearchReplace->setToolTip(tr("Find & Replace %1F").arg(commandKey()));
     m_btnSearchReplace->setPosition(CWizToolButton::right);
     connect(m_btnSearchReplace, SIGNAL(clicked()), SLOT(on_btnSearchReplace_clicked()));
@@ -1328,7 +1444,12 @@ WizEditorToolBar::WizEditorToolBar(WizExplorerApp& app, QWidget *parent)
 
     m_btnInsertCode = new CWizToolButton(this);
     m_btnInsertCode->setCheckable(false);
+<<<<<<< HEAD
     m_btnInsertCode->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertCode", editIconSize, ICON_OPTIONS));
+=======
+    m_btnInsertCode->setIcon(::WizLoadSkinIcon(skin, "actionFormatInsertCode", editIconSize));
+    //m_btnInsertCode->setIconSize(QPixmap(WizGetSkinResourceFileName(skin, "actionFormatInsertCode")).size());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     m_btnInsertCode->setToolTip(tr("Insert code %1%2C").arg(shiftKey()).arg(commandKey()));
     m_btnInsertCode->setPosition(CWizToolButton::left);
     connect(m_btnInsertCode, SIGNAL(clicked()), SLOT(on_btnInsertCode_clicked()));

@@ -12,7 +12,10 @@
 #include "utils/WizStyleHelper.h"
 #include "share/WizMisc.h"
 #include "share/WizQtHelper.h"
+<<<<<<< HEAD
 #include "share/WizUIBase.h"
+=======
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 
 
 WizCellButton::WizCellButton(ButtonType type, QWidget *parent)
@@ -20,7 +23,12 @@ WizCellButton::WizCellButton(ButtonType type, QWidget *parent)
     , m_buttonType(type)
     , m_state(0)
     , m_count(0)
+<<<<<<< HEAD
     , m_iconSize(WizSmartScaleUI(16), WizSmartScaleUI(16))
+=======
+    , m_buttonType(type)
+    , m_iconSize(WizSmartScaleUI(14), WizSmartScaleUI(14))
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 {    
 }
 
@@ -130,12 +138,21 @@ QSize WizCellButton::sizeHint() const
     switch (m_buttonType)
     {
     case ImageOnly:
+<<<<<<< HEAD
         return QSize(WizSmartScaleUI(28), WizSmartScaleUI(26));
     case WithCountInfo:
         return QSize(WizSmartScaleUI(28) + WizSmartScaleUI(nTextWidth), WizSmartScaleUI(26));
 #ifdef Q_OS_WIN
     default:
         return QSize(WizSmartScaleUI(28), WizSmartScaleUI(26));
+=======
+        return QSize(28, WizSmartScaleUI(26));
+    case WithCountInfo:
+        return QSize(28 + WizSmartScaleUI(nTextWidth), WizSmartScaleUI(26));
+#ifdef Q_OS_WIN
+    default:
+        return QSize(28, WizSmartScaleUI(26));
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 #endif
     }
 }
@@ -159,6 +176,11 @@ namespace RoundCellButtonConst {
 WizRoundCellButton::WizRoundCellButton(QWidget* parent)
     : WizCellButton(ImageOnly, parent)
 {
+<<<<<<< HEAD
+=======
+    m_iconSize = QSize(iconWidth(), WizSmartScaleUI(RoundCellButtonConst::iconHeight));
+
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     setMaximumWidth(0);
     m_animation = new QPropertyAnimation(this, "maximumWidth", this);
 }
@@ -200,13 +222,38 @@ QString WizRoundCellButton::text() const
     return "";
 }
 
+<<<<<<< HEAD
+=======
+int WizRoundCellButton::iconWidth() const
+{
+    return WizSmartScaleUI(RoundCellButtonConst::iconHeight);
+
+//    switch (m_state) {
+//    case Normal:
+//        return 12;
+//        break;
+//    case Checked:
+//    case Badge:
+//        return 13;
+//        break;
+//    default:
+//        Q_ASSERT(0);
+//        break;
+//    }
+}
+
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
 int WizRoundCellButton::buttonWidth() const
 {
     QFont f;
     f.setPixelSize(WizSmartScaleUI(RoundCellButtonConst::fontSize));
     QFontMetrics fm(f);
     int width = RoundCellButtonConst::margin * 2.5 + RoundCellButtonConst::spacing
+<<<<<<< HEAD
             + m_iconSize.width() + fm.width(text());
+=======
+            + iconWidth() + fm.width(text());
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     return width;
 }
 
@@ -254,7 +301,11 @@ void WizRoundCellButton::paintEvent(QPaintEvent* /*event*/)
     QFontMetrics fm(f);
     QRect rcText(rcIcon.right() + RoundCellButtonConst::spacing, (opt.rect.height() - fm.height()) / 2,
                  opt.rect.right() - rcIcon.right() - RoundCellButtonConst::spacing, fm.height());
+<<<<<<< HEAD
     p.setPen(QColor(isDarkMode() ? "#a6a6a6" : "#535353"));
+=======
+    p.setPen(QColor("#535353"));
+>>>>>>> 按显示器的DPI进行缩放显示，包括：TitleBar, TagBar, InfoBar, EditorToolBar, DocumentListView(Section头部、thumb图片), DocumentView。
     p.setFont(f);
     p.drawText(rcText,Qt::AlignVCenter | Qt::AlignLeft, text());
 }

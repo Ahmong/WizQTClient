@@ -19,7 +19,6 @@
 
 #include "share/WizDocumentStyle.h"
 
-
 WizDocumentListViewDocumentItem::WizDocumentListViewDocumentItem(WizExplorerApp& app,
                                                    const WizDocumentListViewItemData& data)
     : WizDocumentListViewBaseItem(0, WizDocumentListType_Document)
